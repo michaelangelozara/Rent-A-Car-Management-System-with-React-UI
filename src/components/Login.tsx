@@ -1,12 +1,12 @@
-import React from 'react'
+import { useState } from 'react';
 import { useLoaderData, useNavigate } from 'react-router-dom'
 
 const Login = () => {
   const loadedData = useLoaderData();
-  
+
   return (
     <>
-      <div>Login Component</div>
+      <div>Login Component </div>
     </>
   )
 }

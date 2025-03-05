@@ -1,14 +1,14 @@
 import { Address } from "./Address";
 
-interface User {
+export interface BasicUser {
     id: number;
-    firstName: string;
-    lastName: string;
+    first_name: string;
+    last_name: string;
+    phone_number: string;
 }
 
-interface DetailedUser extends User {
-    email: string;
+export interface DetailedUser extends BasicUser {
     username: string;
-    phoneNumber: string;
-    address: Address
+    email: string;
+    address: Address;
 }
